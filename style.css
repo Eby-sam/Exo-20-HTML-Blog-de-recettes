@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+    background-color: aquamarine;
+    padding: 1px;
+}
+
+.title {
+    background-color: white;
+    color: aquamarine;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Comic Sans MS";
+    font-style: italic;
+    font-size: 25px;
+}
+
+#center {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 50px;
+}
+
+#blockOne {
+    width: 30%;
+    height: 250px;
+    border: white 1px solid;
+    background-color: white;
+    border-radius: 15px;
+}
+
+#blockTwo {
+    width: 30%;
+    height: 250px;
+    border: white 1px solid;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.link {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-style: italic;
+    font-family: fantasy;
+}
+
+.descript {
+    padding-top: 20px;
+    margin-left: 20px;
+}
+
+a {
+    padding-top: 10px;
+}
+
+.pageOne {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.myLink {
+    background-color: white;
+    border-radius: 15px;
+    width: 15%;
+    height: 250px;
+}
+
+.divCenter {
+    background-color: white;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.textOne {
+    padding-top: 20px;
+    margin-left: 10px;
+}
+
+.table {
+    display: flex;
+    justify-content: center;
+}
+
+#pageFour {
+    width: 40%;
+    height: 300px;
+}
+
+
+
+@media screen and (max-width: 450px) {
+
+/*
+    ------ Home ------
+ */
+    #center {
+        padding-top: 50px;
+        flex-direction: column;
+        height: 700px;
+    }
+    #blockOne {
+        width: 80%;
+    }
+    #blockTwo {
+        width: 80%;
+    }
+    .title {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    /*
+       -------- page one to four ----------
+     */
+
+    .pageOne {
+        padding-top: 50px;
+        flex-direction: column;
+        max-width: 450px;
+    }
+
+    .img {
+        max-width: 90%;
+        height: auto;
+    }
+
+    .table {
+        max-width: 100%;
+
+    }
+
+    .divCenter  {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 90%;
+    }
+
+    .textOne {
+        font-size: 14px;
+        width: 90%;
+    }
+
+    .myLink {
+        width: 90%;
+        padding-top: 30px;
+    }
+
+    #pageFour {
+        font-size: 14px;
+        width: 90%;
+    }
+}
